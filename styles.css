@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+} 
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto';
+    
+}
+
+.header{
+    background-color: #1f2937;
+}
+
+#nav-links{
+    width: 70%;
+    margin: 0px auto;
+    position: relative;
+    
+}
+
+#logo {
+    display: flex;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+   
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#logo h2 {
+    position: relative;
+    top: 80%;
+    right: 80%;
+    color: #f9faf8;
+
+}
+
+nav{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+ul{
+    display: flex;
+
+}
+
+li{
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb ;
+    display: block;
+    padding: 20px 25px;
+    border-radius: 5px;
+    transition: .5s;
+   
+}
+
+nav ul li a:hover{
+    background-color: #415775;
+
+}
+
+#head{
+    position: relative;
+    width: 70%;
+    background-color: #1f2937;
+    color: #e5e7eb;
+    overflow: hidden;
+    display: flex;
+    margin: 20px auto;
+    height: 30%;
+    padding: 10px;
+}
+
+
+
+#head-text{
+    width: 30%;
+    margin: 20px 0px;
+    
+}
+
+#head-image img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 40%;
+    border-radius: 10px;
+    
+    
+}
+
+#sign-up-header{
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    background-color: #3882f6;
+    color: white;
+    font-weight: 600;
+}
+
+
+#team{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+
+}
+
+.dedicated-staff {
+    background-color: #ddd;
+
+}
+
+.dedicated-staff img {
+    max-width: 300px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.dedicated-staff img:hover{
+    transform: scale(1.1);
+}
+
+.dedicated-staff p{
+    padding: 10px;
+    text-align: center;
+}
+
+#testimonials{
+    width: 60%;
+    margin: 4rem auto;
+}
+
+#testimonials p {
+    font-size: 24px;
+    font-style: italic;
+    color: #1f2937;
+}
+
+#testimonials h3{
+    text-align: right;
+}
+
+.CTA {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #3882f6;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+}
+
+#text{
+    color: white;
+    padding: 10px;
+}
+
+#sign-up{
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: 1.5px solid white;
+    position: absolute;
+    left: 80%;
+    top: 25%;
+   
+}
+
+footer{
+    background-color: #1f2937;
+    width: 100%;
+    height: 5rem;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile */
+@media (max-width: 480px){
+
+    .header{
+        width: 100%;
+    }
+
+    #logo {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
+    #logo img {
+        width:50px;
+        height: 50px;
+    }
+
+    #logo h2 {
+        display: none;
+    }
+
+    #nav-links{
+        width: 100%;
+
+    }
+
+    #nav-links ul{
+        display: none;
+    }
+
+
+    #head{
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    } 
+    
+    #head-text{
+        width: 100%;
+        margin: 20px 0px;
+        display: block;        
+    }
+
+    #head-text h2 {
+        font-size: 0.9rem;
+    }
+
+    #head-text p {
+        font-size: 0.7rem;
+    }
+    
+    #head-image img{
+        width: 100%;
+        height: auto;
+        position: relative; 
+        left: 1%;
+    }
+    
+    #sign-up-header{
+        padding: 5px 10px;
+        position: relative;
+        font-size: 0.8rem;
+        left: 30%;
+        width: 40%;
+    }
+
+    #team{
+        width: 90%;
+        display: block;
+        margin: 2rem auto;
+   
+    }
+
+    #team h3 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dedicated-staff{
+        width: 100%;
+        font-size: 0.8rem;
+
+    }
+
+    .dedicated-staff img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #testimonials{
+        width: 100%;
+        margin: 2rem 0.5rem;
+    }
+    
+    #testimonials p {
+        font-size: 0.8rem;
+        
+    }
+    
+    #testimonials h3, h2{
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .CTA {
+        width: 95%;
+        height: 120px;
+        display: block;
+        position: relative;
+
+    }
+    
+    #text{
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+    
+    #sign-up{
+        padding: 5px 15px;
+        position: absolute;
+        font-size: 0.8rem;
+        top: 70%;
+        left: 30%;
+        width: 40%;
+       
+    }
+
+    footer{
+        font-size: 0.85rem;
+    }
+
+
+}
+
+/* Extra Small Devices */
+@media (min-width: 481px) and (max-width: 767px){
+
+    .header{
+        width: 100%;
+    }
+
+    #logo {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+    }
+    #logo img {
+        width:50px;
+        height: 50px;
+    }
+
+    #logo h2 {
+        display: none;
+    }
+
+    #nav-links{
+        width: 100%;
+
+    }
+
+    #nav-links ul{
+        display: none;
+    }
+
+
+    #head{
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    } 
+    
+    #head-text{
+        width: 80%;
+        margin: 20px auto;
+        display: block;        
+    }
+
+    #head-text h2 {
+        font-size: 0.9rem;
+    }
+
+    #head-text p {
+        font-size: 0.7rem;
+    }
+    
+    #head-image img{
+        width: 100%;
+        height: auto;
+        position: relative; 
+        left: 1%;
+    }
+    
+    #sign-up-header{
+        padding: 15px 20px;
+        position: relative;
+        font-size: 0.8rem;
+        left: 30%;
+        width: 30%;
+    }
+
+    #team{
+        width: 90%;
+        display: block;
+        margin: 2rem auto;
+   
+    }
+
+    #team h3 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dedicated-staff{
+        width: 100%;
+        font-size: 0.9rem;
+
+    }
+
+    .dedicated-staff img {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #testimonials{
+        width: 95%;
+        margin: 2rem 0.7rem;
+    }
+    
+    #testimonials p {
+        font-size: 0.9rem;
+        
+    }
+    
+    #testimonials h3, h2{
+        text-align: center;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .CTA {
+        width: 95%;
+        height: 150px;
+        display: block;
+        position: relative;
+
+    }
+    
+    #text{
+        padding: 6px;
+        font-size: 0.7rem;
+    }
+    
+    #sign-up{
+        padding: 15px 20px;
+        position: absolute;
+        font-size: 0.8rem;
+        top: 50%;
+        left: 30%;
+        width: 30%;
+       
+    }
+
+    footer{
+        font-size: 0.85rem;
+    }
+
+
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px){
+
+    .header{
+        width: 100%;
+    }
+
+    #logo {
+        margin: 0;
+        width: 150px;
+        height: 150px;
+    }
+    #logo img {
+        width:80px;
+        height: 80px;
+    }
+
+    #logo h2 {
+        display: block;
+        position: relative;
+        right: 70%;
+        top: 70%;
+
+    }
+
+    #nav-links{
+        width: 100%;
+
+    }
+
+    #nav-links ul{
+        display: none;
+    }
+
+
+    #head{
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    } 
+    
+    #head-text{
+        width: 80%;
+        margin: 20px auto;
+        display: block;        
+    }
+
+    #head-text h2 {
+        font-size: 1rem;
+    }
+
+    #head-text p {
+        font-size: 0.9rem;
+    }
+    
+    #head-image img{
+        width: 100%;
+        height: auto;
+        position: relative; 
+        left: 1%;
+    }
+    
+    #sign-up-header{
+        padding: 15px 20px;
+        position: relative;
+        font-size: 0.8rem;
+        left: 30%;
+        width: 30%;
+    }
+
+    #team{
+        width: 90%;
+        display: block;
+        justify-content: space-between;
+        margin: 2rem auto;
+   
+    }
+
+    #team h3 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dedicated-staff{
+        width: 100%;
+        font-size: 0.9rem;
+
+    }
+
+    .dedicated-staff img {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #testimonials{
+        width: 80%;
+        margin: 2rem 0.7rem;
+    }
+    
+    #testimonials p {
+        font-size: 1rem;
+        
+    }
+    
+    #testimonials h3, h2{
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .CTA {
+        width: 95%;
+        height: 150px;
+        display: block;
+        position: relative;
+
+    }
+    
+    #text{
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+    
+    #sign-up{
+        padding: 15px 20px;
+        position: absolute;
+        font-size: 0.8rem;
+        top: 50%;
+        left: 30%;
+        width: 30%;
+       
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Tablets */
+@media (min-width: 992px) and (max-width: 1199px){
+
+    .header{
+        width: 100%;
+    }
+
+    #logo {
+        margin: 0;
+        width: 150px;
+        height: 150px;
+    }
+    #logo img {
+        width:80px;
+        height: 80px;
+    }
+
+    #logo h2 {
+        display: block;
+        position: relative;
+        right: 70%;
+        top: 70%;
+
+    }
+
+    #nav-links{
+        width: 100%;
+
+    }
+
+    #nav-links ul{
+        display: none;
+    }
+
+
+    #head{
+        position: relative;
+        width: 100%;
+        display: block;
+        margin: 0px auto;
+    } 
+    
+    #head-text{
+        width: 80%;
+        margin: 20px auto;
+        display: block;        
+    }
+
+    #head-text h2 {
+        font-size: 1rem;
+    }
+
+    #head-text p {
+        font-size: 0.9rem;
+    }
+    
+    #head-image img{
+        width: 100%;
+        height: auto;
+        position: relative; 
+        left: 1%;
+    }
+    
+    #sign-up-header{
+        padding: 15px 20px;
+        position: relative;
+        font-size: 0.8rem;
+        left: 30%;
+        width: 30%;
+    }
+
+    #team{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 2rem auto;
+   
+    }
+
+    #team h3 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .dedicated-staff{
+        width: 100%;
+        font-size: 0.9rem;
+
+    }
+
+    .dedicated-staff img {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #testimonials{
+        width: 80%;
+        margin: 2rem 0.7rem;
+    }
+    
+    #testimonials p {
+        font-size: 1rem;
+        
+    }
+    
+    #testimonials h3, h2{
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    .CTA {
+        width: 95%;
+        height: 150px;
+        display: block;
+        position: relative;
+
+    }
+    
+    #text{
+        padding: 6px;
+        font-size: 0.9rem;
+    }
+    
+    #sign-up{
+        padding: 15px 20px;
+        position: absolute;
+        font-size: 0.8rem;
+        top: 50%;
+        left: 30%;
+        width: 30%;
+       
+    }
+
+    footer{
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1919px){
+
+    #head-image img{
+        width: 100%;
+        position: relative;  
+        left: 1%; 
+    } 
+    .dedicated{
+        display: block;
+        padding: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+    
+    #testimonials h3, h2{
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+
+
+}
